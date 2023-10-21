@@ -1,0 +1,14 @@
+body{
+    background-color: #3e2b1d;
+
+}
+
+.dog300{
+    width: 300px;
+}
+
+.dog300 img {
+    width: 100%; /* makes the image width 100% of its parent, i.e., .dog300 */
+    height: auto; /* maintain the aspect ratio */
+    max-width: 100%; /* this line is to ensure that the image doesn't exceed the width of the container */
+}
