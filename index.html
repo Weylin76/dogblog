@@ -6,19 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" href="images/64 px paw.jpg" type="image/jpg" />
+    <script src="scripts/scripts.js"></script>
     <title>Douglas Dog Blog</title>
 </head>
 <header>
     <img id="hero1" src="images/hero1.jpg" alt="bear and duncan">
-    <nav>
-        <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="bear.html">Bear</a></li>
-            <li><a href="duncan">Duncan</a></li>
-            <li><a href="brewster">Brewster</a></li>
-            <li><a href="rocky">Rocky</a></li>
-        </ul>
-    </nav>
+    <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+    <div id="nav-menu" class="nav-menu-hidden">
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="bear.html">Bear</a></li>
+                <li><a href="duncan">Duncan</a></li>
+                <li><a href="brewster">Brewster</a></li>
+                <li><a href="rocky">Rocky</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
 
 <body id="main-page" class="common-background">

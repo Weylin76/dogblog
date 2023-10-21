@@ -6,24 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" href="images/64 px paw.jpg" type="image/jpg" />
+    <script src="scripts/scripts.js"></script>
     <title>Douglas Dog Blog</title>
 </head>
 <header>
     <img id="hero1" src="images/hero1.jpg" alt="bear and duncan">
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="bear.html">Bear</a></li>
-            <li><a href="duncan.html">Duncan</a></li>
-            <li><a href="brewster.html" class="active">Brewster</a></li>
-            <li><a href="rocky.html">Rocky</a></li>
-        </ul>
-    </nav>
+    <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+    <div id="nav-menu" class="nav-menu-hidden">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bear.html">Bear</a></li>
+                <li><a href="duncan.html">Duncan</a></li>
+                <li><a href="brewster.html" class="active">Brewster</a></li>
+                <li><a href="rocky.html">Rocky</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
 
 <body id="brew-background" class="common-background">
     <div id="brew-wrapper">
-        <p>Brewster's Page</p>
+        <h1>Brewster's Page</h1>
         <p>New pup in town!</p>
         <img src="images/brew3.jpg" alt="Brew pup">
         <p>I'm protecting the mulch. Someone has to do it.</p>

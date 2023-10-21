@@ -6,24 +6,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" href="images/64 px paw.jpg" type="image/jpg" />
+    <script src="scripts/scripts.js"></script>
     <title>Douglas Dog Blog</title>
 </head>
 <header>
     <img id="hero1" src="images/hero1.jpg" alt="bear and duncan">
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="bear.html">Bear</a></li>
-            <li><a href="duncan.html">Duncan</a></li>
-            <li><a href="brewster.html">Brewster</a></li>
-            <li><a href="rocky.html" class="active">Rocky</a></li>
-        </ul>
-    </nav>
+    <button class="hamburger" onclick="toggleMenu()">&#9776;</button>
+    <div id="nav-menu" class="nav-menu-hidden">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="bear.html">Bear</a></li>
+                <li><a href="duncan.html">Duncan</a></li>
+                <li><a href="brewster.html">Brewster</a></li>
+                <li><a href="rocky.html" class="active">Rocky</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
 
 <body id="rocky-background" class="common-background">
     <div id="rocky-wrapper">
-        <p>Rocky's Page</p>
+        <h1>Rocky's Page</h1>
         <p>Rocky hanging out with his big brother.</p>
         <img src="images/rocky1.jpg" alt="Rocky with Duncan">
         <p>Even Rocky needs a litte rest.</p>
