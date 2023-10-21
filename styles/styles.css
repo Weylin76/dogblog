@@ -54,6 +54,12 @@ nav ul {
 }
 nav a{
     text-decoration: none; /*remove underlines*/
+    color: red;
+}
+
+nav a.active {
+    background-color: #4CAF50; /* for example, a green background */
+    color: white; /* white text */
 }
 
 h1{
