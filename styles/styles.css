@@ -1,53 +1,84 @@
 body{
-    background-color: #3e2b1d; /*rocky*/
-    background-color: #f8ba84;/*rocky*/
-    background-color: #d8b693; /*brewster*/
-    background-color: #f5efe7; /*brewster */
-    background-color: #121015; /*bear*/
-    background-color: #fcfcfa; /*bear*/
-    background-color: #ffffff; /*ducan*/
-    background-color: #201e1f; /*ducnan*/
     background-color: #203731;/*rocky*/
     max-width: 1600px;
-    margin: 0 auto;
+    margin: .5rem auto;
+    padding: .5rem;
+}
+#wrapper, #bear-wrapper, #duncan-wrapper, #brew-wrapper, #rocky-wrapper{
+    padding: 1rem;
+    text-align: center;
 }
 #wrapper{
     background-color:#FFB612;
 }
-
+#bear-background{
+    background-color: #121015;
+    padding: .5rem;
+    margin: 0 auto;
+}
+#bear-wrapper{
+    background-color: #fcfcfa;
+}
+#duncan-background{
+    background-color: #ffffff;
+    padding: .5rem;
+    margin: 0 auto;
+}
+#duncan-wrapper{
+    background-color: #201e1f;
+    color: white;
+}
+#brew-background{
+    background-color: #d8b693;
+    margin: 0 auto;
+}
+#brew-wrapper{
+   background-color:  #f5efe7;
+}
+#rocky-background{
+    background-color: #3e2b1d;
+    margin: 0 auto;
+}
+#rocky-wrapper{
+    background-color: #f8ba84;
+}
 #hero1{
     width: 100%;
     box-sizing: border-box;
     border-radius: 2rem;
     border: 2px solid black;
+    max-height: 250px;
 }
 
 nav ul {
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: start;
     list-style: none; /* Removes the bullet points */
     cursor: pointer; /*adds pointing hand*/
     padding: 0;
     margin: 0;
     font-size: 3rem;
-    
 }
 nav a{
     text-decoration: none; /*remove underlines*/
 }
 
+h1{
+    text-align: center;
+}
+
  img{
     border-radius: 2rem;
     border: 2px solid black;
+    margin: .5rem 0;
  }
 
-/* .dog300{
-    width: 300px;
-}
+ #packer-game, #duncan-sleeping{
+    max-width: 300px;
+ }
 
-.dog300 img {
-    width: 100%; /* makes the image width 100% of its parent, i.e., .dog300 */
-    height: auto; /* maintain the aspect ratio */
-    max-width: 100%; /* this line is to ensure that the image doesn't exceed the width of the container */
-} */
+ .duncan-pics{
+    border: 2px white solid;
+ }
