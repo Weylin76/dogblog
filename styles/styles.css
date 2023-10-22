@@ -117,3 +117,34 @@ h1{
  .duncan-pics{
     border: 2px white solid;
  }
+
+ .movie-div{
+    border: 5px solid black;
+    border-radius: 2rem;
+    padding: 1rem;
+ }
+
+ #doggie-fight{
+    border: 2px solid white;
+    border-radius: 2rem;
+    padding: 1rem;
+ }
+ video{
+    margin: 1rem;
+    max-width: 300px;
+    padding: .5rem;
+    box-sizing: border-box;
+ }
+ #doggie-fight {
+    max-width: 300px;
+    box-sizing: border-box;
+    margin: 0 auto;
+
+}
+
+#doggie-fight video {
+    width: 100%; /* This makes the video fill the width of the parent container. */
+    max-width: 100%; /* This prevents the video from exceeding the width of the parent container. */
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
+}
+ 
