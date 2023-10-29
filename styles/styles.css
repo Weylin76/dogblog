@@ -100,7 +100,7 @@ h1{
 
  img{
     border-radius: 2rem;
-    border: 2px solid black;
+    border: 3px solid black;
     margin: .5rem 0;
     max-width: 300px;
  }
@@ -147,4 +147,116 @@ h1{
     max-width: 100%; /* This prevents the video from exceeding the width of the parent container. */
     box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
 }
+/*Make gator biting arm shake*/
+@keyframes shake {
+    0% { transform: translateX(0); }
+    10% { transform: translateX(-10px); }
+    20% { transform: translateX(10px); }
+    30% { transform: translateX(-10px); }
+    40% { transform: translateX(10px); }
+    50% { transform: translateX(-10px); }
+    60% { transform: translateX(10px); }
+    70% { transform: translateX(-10px); }
+    80% { transform: translateX(10px); }
+    90% { transform: translateX(-10px); }
+    100% { transform: translateX(0); }
+  }
+
+  .img-shake:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: 2; /* Defines how many times the animation plays */
+  }
+
+  /*move picture in from off screen*/
+  @keyframes slideInFromLeft {
+    0% { left: -100%; }
+    100% { left: 0; }
+  }
+
+  .img-slide {
+    position: relative;
+    left: -100%;
+    animation: slideInFromLeft 2s forwards; /* `forwards` ensures it remains in the final state after animation completes */
+  }
+
+  /*make image spin*/
+  
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.img-spin {
+    animation: spin 4s linear; /* Adjust the 2s for a faster or slower spin */
+  }
+ /*spin oppiste direction*/
+  @keyframes spinReverse {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(-360deg); }
+  }
+
+  .img-spin-reverse {
+    animation: spinReverse 30s linear infinite; /* The image will spin counter-clockwise once over a duration of 2 seconds */
+  }
+  
+  /*Make image larger on hover over*/
+  .img-scale:hover {
+    transform: scale(1.25); /* 1.25 means 125% of the original size, i.e., 25% larger */
+    transition: transform 0.3s ease; /* Optional: for smooth scaling */
+  }
+
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+/*moves picture in and out*/
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes wag {
+    0% { transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+    100% { transform: rotate(-5deg); }
+}
+.wag {
+    animation: wag 0.5s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-20px); }
+    60% { transform: translateY(-10px); }
+}
+.bounce {
+    animation: bounce 2s infinite;
+}
+
+.tilt:hover {
+    transition: transform 0.5s;
+    transform: rotate(-5deg);
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+.fade-in {
+    animation: fadeIn 10s;
+}
+
+.flip:hover {
+    transform: scaleX(-1); /* For horizontal flip */
+    /* transform: scaleY(-1); For vertical flip */
+    transition: transform 0.5s;
+}
+
+
+
  
+  
+  
+
+  
