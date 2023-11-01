@@ -10,7 +10,7 @@ body{
 }
 #wrapper, #bear-wrapper, #duncan-wrapper, #brew-wrapper, #rocky-wrapper, #extra-wrapper{
     padding: 1rem;
-    text-align: center;
+    text-align: left;
 }
 #wrapper{
     background-color:#FFB612;
