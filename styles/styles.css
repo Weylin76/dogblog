@@ -1,3 +1,8 @@
+header{
+    position: relative;  /* Ensures the header's child elements can be positioned relative to it */
+    padding: 1rem;
+}
+
 body{
     background-color: #203731;/*rocky*/
     max-width: 1600px;
@@ -23,7 +28,7 @@ body{
     text-align: center;
 }
 
-#bear-wrapper, #duncan-wrapper, #brew-wrapper, #rocky-wrapper, #extra-wrapper{
+#bear-wrapper, #duncan-wrapper, #brew-wrapper, #rocky-wrapper, #extra-wrapper, #movie-wrapper{
     padding: 1rem;
     text-align: center;
     font-size: x-large;
@@ -64,18 +69,10 @@ body{
 #extra-wrapper{
     background-color: lightsteelblue;
 }
-
-nav ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: start;
-    list-style: none; /* Removes the bullet points */
-    cursor: pointer; /*adds pointing hand*/
-    padding: 0;
-    margin: 0;
-    font-size: 3rem;
+#movie-wrapper{
+    background-color: lightsteelblue; 
 }
+
 nav a{
     text-decoration: none; /*remove underlines*/
     color: red;
@@ -105,10 +102,18 @@ nav a.active {
 
 /* Optional: Style for the navigation menu */
 nav ul {
-    list-style-type: none;
+    list-style-type: none; /* Removes the bullet points */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    cursor: pointer; /*adds pointing hand*/
+    padding: 0;
+    margin: 0;
+    font-size: 3rem;
 }
 
-nav ul li {
+nav li {
     padding: 8px;
 }
 
@@ -286,6 +291,36 @@ h1{
     transition: transform 0.5s;
 }
 
+@media screen and (min-width: 901px) {
+    .hamburger {
+        display: none;  /* Hide hamburger button */
+    }
+
+    #nav-menu {
+        display: block;  /* Always show the navigation menu */
+    }
+
+    nav ul {
+        flex-direction: row;  /* Make the nav horizontal */
+        justify-content: space-between;
+        flex-wrap: nowrap; /* Ensure items don't wrap to next line */
+    }
+
+    nav li {
+        display: inline-block; /* Make sure list items are inline */
+        margin: 0;
+        margin-right: 20px;  /* Space between horizontal list items. You can adjust this value. */
+    }
+
+    nav li:last-child {
+        margin-right: 0;  /* Ensures the last item doesn't have unnecessary right margin */
+    }
+    #bear-wrapper, #duncan-wrapper, #brew-wrapper, #rocky-wrapper, #extra-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two equal width columns */
+        text-align: center;
+    }
+}
 
 
  
